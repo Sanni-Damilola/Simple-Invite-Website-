@@ -3,14 +3,14 @@ import { useRoutes } from "react-router-dom";
 import Enterdata from "../Enterdata/Enterdata";
 
 const Nav = () => {
-  const element = useRoutes([
+  const route = useRoutes([
     {
       path: "/",
-      element: <Enterdata  />,
+      element: <Enterdata />,
     },
   ]);
 
-  return element;
+  return route;
 };
 
 export default Nav;

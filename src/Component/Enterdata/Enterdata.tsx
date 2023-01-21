@@ -8,6 +8,8 @@ import bg from "../Asset/bg.jpg";
 import small from "../Asset/small.jpg";
 
 const Enterdata: React.FC = () => {
+
+  // state
   const [image, setimage] = useState<string>(img);
   const [name, setname] = useState<string>("");
   const [show, setshow] = useState<boolean>(false);
@@ -20,6 +22,7 @@ const Enterdata: React.FC = () => {
     setimage(save);
   };
 
+  // Use ref
   const printRef: any = React.useRef();
 
   const handleDownloadImage = async () => {
